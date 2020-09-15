@@ -9,6 +9,9 @@
 * CSS 
 * JS 
 
-[Demo](https://gifymonster.netlify.app)     
+[Demo](https://gifymonster.netlify.app)  
+
+![gif](demo/gifymonstercover.png)
+**Oops I'am a Suits fan**
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/27438277-48cd-4a3c-a74f-952a5a931ac1/deploy-status)](https://app.netlify.com/sites/gifymonster/deploys)
