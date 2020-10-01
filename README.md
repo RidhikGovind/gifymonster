@@ -9,7 +9,7 @@
 * CSS 
 * JS 
 
-[Demo](https://gifymonster.netlify.app)  
+### (https://gifymonster.netlify.app)  
 
 ![gif](demo/gifymonstercover.png)
 
