@@ -9,7 +9,7 @@
 * CSS 
 * JS 
 
-### (https://gifymonster.netlify.app)  
+## Find the DEMO here -> https://gifymonster.netlify.app  
 
 ![gif](demo/gifymonstercover.png)
 
