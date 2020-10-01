@@ -78,6 +78,7 @@ form button:hover {
 }
 
 .link {
+  display: none;
   color: white;
   font-family: "Courier New", Courier, monospace;
   margin-top: 25px;

@@ -4,6 +4,7 @@ const form = document.querySelector("form");
 const gif = document.querySelector(".gif");
 const button = document.querySelector("button");
 const loader = document.querySelector(".loader");
+const link = document.querySelector(".link");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -14,12 +15,12 @@ form.addEventListener("submit", (e) => {
   fetch(gifURL)
     .then((datas) => datas.json())
     .then((response) => {
-      document.querySelector(".link").innerHTML =
-        response.data.fixed_height_downsampled_url;
+      link.innerHTML = response.data.fixed_height_downsampled_url;
       gif.src = response.data.fixed_height_downsampled_url;
 
       form.reset();
       loader.style.display = "none";
+      link.style.display = "block";
     })
     .catch((err) => console.log(err));
 });
