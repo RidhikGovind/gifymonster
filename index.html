@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GifyMonster</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/7d5b392920.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body class="light">
-    <div class="theme-container">
-      <button id="theme" class="theme">
-        <img id="theme-icon" src='./icon/sun.png' />
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GifyMonster</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/7d5b392920.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light">
+  <div class="theme-container">
+    <button id="theme" class="theme">
+      <img id="theme-icon" src='./icon/sun.png' />
+    </button>
+  </div>
+  <div class="heading">
+    <p>GifyMonster</p>
+    <img src="icon/monsters.png" />
+  </div>
+
+  <form>
+    <input id="input" type="text" return false; />
+    <button type="submit">SEARCH</button>
+  </form>
+
+  <div class="display">
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
     </div>
-    <div class="heading">
-      <p>GifyMonster</p>
-      <img src="icon/monsters.png" />
-    </div>
+    <img class="gif" src="" />
+    <p class="link"></p>
+  </div>
+  </div>
 
-    <form>
-      <input id="input" type="text" return false; />
-      <button type="submit">SEARCH</button>
-    </form>
+  <footer>
+    <a href="http://github.com/RidhikGovind">
+      <i class="fab fa-github-square fa-2x"></i></a>
+  </footer>
 
-    <div class="display">
-      <div class="loader">
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-      <img class="gif" src="" />
-      <p class="link"></p>
-      </div>
-    </div>
+  <script src="script.js"></script>
+</body>
 
-    <footer>
-      <a href="http://github.com/RidhikGovind">
-        <i class="fab fa-github-square fa-2x"></i
-      ></a>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
 </html>
