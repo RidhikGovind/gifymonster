@@ -4,10 +4,29 @@
   padding: 0;
 }
 
+:root {
+  --light-text: #4a4a4a;
+  --dark-text: white;
+  --light-bg: white;
+  --dark-bg: #4a4a4a;
+}
+
 body {
   font-family: "Bungee Shade", cursive;
-  background-color: black;
   padding: 40px 0px 0 0px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all ease 0.3s;
+}
+
+body.dark {
+  --bg-color: var(--dark-bg);
+  --text-color: var(--dark-text);
+}
+
+body.light {
+  --bg-color: var(--light-bg);
+  --text-color: var(--light-text);
 }
 
 form {
@@ -20,9 +39,8 @@ form {
   align-items: center;
 }
 .heading p {
-  color: white;
+  color: var(--text-color);
   font-size: 3rem;
-
   position: relative;
   width: fit-content;
 }
@@ -79,7 +97,7 @@ form button:hover {
 
 .link {
   display: none;
-  color: white;
+  color: var(--text-color);
   font-family: "Courier New", Courier, monospace;
   margin-top: 25px;
   padding: 5px;
@@ -129,7 +147,7 @@ form button:hover {
 footer {
   width: 100%;
   font-size: 1.1em;
-  color: white;
+  color: var(--text-color);
   font-family: sans-serif;
   position: absolute;
   bottom: 4%;
@@ -145,4 +163,24 @@ footer a i {
 }
 footer a i:hover {
   box-shadow: 0px 0px 40px 3px rgba(255, 255, 255, 0.4);
+}
+
+.theme-container {
+  display: block;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.theme {
+  background: none;
+  border: none;
+}
+
+.theme:focus {
+  outline: none;
+}
+
+.theme img {
+  width: 30px;
+  height: auto;
 }

@@ -5,6 +5,10 @@ const gif = document.querySelector(".gif");
 const button = document.querySelector("button");
 const loader = document.querySelector(".loader");
 const link = document.querySelector(".link");
+const theme = document.querySelector("#theme");
+const themeIcon = document.querySelector("#theme-icon");
+
+let isDark = false;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -23,4 +27,17 @@ form.addEventListener("submit", (e) => {
       link.style.display = "block";
     })
     .catch((err) => console.log(err));
+});
+
+theme.addEventListener("click", () => {
+  if (isDark) {
+    document.querySelector("body").classList.remove("dark");
+    document.querySelector("body").classList.add("light");
+    themeIcon.setAttribute("src", "./icon/sun.png");
+  } else {
+    document.querySelector("body").classList.remove("light");
+    document.querySelector("body").classList.add("dark");
+    themeIcon.setAttribute("src", "./icon/moon.png");
+  }
+  isDark = !isDark;
 });
